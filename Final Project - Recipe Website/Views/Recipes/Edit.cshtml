@@ -38,15 +38,13 @@
                 <input asp-for="Photo" class="form-control" />
                 <span asp-validation-for="Photo" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Instructions" class="control-label"></label>
-                <input asp-for="Instructions" class="form-control" />
-                <span asp-validation-for="Instructions" class="text-danger"></span>
+            <div class="col-md-6">
+                <label><h4>Instructions</h4></label>
+                @Html.TextAreaFor(model => model.Instructions, new { style = "width: 400px; height 150px;" , required=""})
             </div>
-            <div class="form-group">
-                <label asp-for="Ingredients" class="control-label"></label>
-                <input asp-for="Ingredients" class="form-control" />
-                <span asp-validation-for="Ingredients" class="text-danger"></span>
+            <div class="col-md-6">
+                <label><h4>Ingredients</h4></label>
+                @Html.TextAreaFor(model => model.Ingredients, new { style = "width: 400px; height 150px;" , required=""})
             </div>
             <div class="form-group">
                 <label asp-for="Author" class="control-label"></label>
