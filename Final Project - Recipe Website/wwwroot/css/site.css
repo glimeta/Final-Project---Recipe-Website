@@ -1,0 +1,156 @@
+html {
+    font-size: 14px;
+    background-color: beige;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+
+
+.display-4 {
+    padding-top: 1em;
+    font-size: 25px;
+    font-weight: Bold
+}
+
+.Cuisine-Option {
+    padding-top: 1em;
+    font-size: 20px;
+}
+
+
+.Cuisine-Option-navlist-item {
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.container-fluid {
+    background: #10a296;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+}
+
+.nav-item {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+    .nav-item a {
+        font-size: 20px;
+        color: blue;
+    }
+
+    .nav-item ::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #040c47;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .nav-item :hover::after {
+        width: 100%
+    }
+
+.navbar-brand {
+    color: orangered !important;
+    font-size: 25px;
+    margin-left: 3%;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#carousel-slides .carousel-item img {
+    height: 150px;
+    width: 20px;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.main {
+    padding-top: 2em;
+}
+
+
+
+.table borderless h2 {
+    font-weight: bold;
+    padding: 1em;
+    height: 14px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: #10a296;
+}
+
+    footer li {
+        list-style: none;
+        display: inline-block;
+        padding: 1px;
+        position: relative;
+        text-align: center;
+    }
+
+
+    footer ul {
+        height: 2em;
+        width: 100%;
+    }
+
+footer ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #4336f4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+footer ul li:hover::after {
+    width: 100%
+}
+
+
+.Msg-button {
+    color: white;
+}

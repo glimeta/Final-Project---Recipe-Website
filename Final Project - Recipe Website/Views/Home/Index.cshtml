@@ -1,0 +1,103 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        @*<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">*@
+            <div id="carousel-slides" class="carousel slide shadow rounded" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item h-100 active" data-bs-interval="500">
+                        <img src="/images/carouselimages/Latin American.jpg" class="d-block w-100" h-100 alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/carouselimages/Asian.jpg" class="d-block w-100" h-100 alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/carouselimages/African.jpg" class="d-block w-100" h-100 alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/carouselimages/Mediterranean.jpg" class="d-block w-100" h-100 alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/carouselimages/Meal.jpg" class="d-block w-100" h-100 alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Your culinary adventure awaits. <br> Get inspired with food and drink recipes from different regions in the world. </p>
+</div>
+
+
+
+    <div id="Cuisine" class="Cuisine-nav" >
+    <h2 class="Cuisine-Option">Choose food cuisine:</h2>
+    <ul class="navbar Cuisine-Option-navlist">
+        <li class="Cuisine-Option-navlist-item">
+            <a class="Latin-American" asp-area="" asp-controller="Recipes" asp-action="Index">Latin American</a>
+        </li>
+        <li class="Cuisine-Option-navlist-item">
+            <a class="Asian" asp-area="" asp-controller="Recipees" asp-action="Index">Asian</a>
+        </li>
+        <li class="Cuisine-Option-navlist-item">
+            <a class="African" asp-area="" asp-controller="Recipees" asp-action="Index">African</a>
+        </li>
+        <li class="Cuisine-Option-navlist-item">
+            <a class="European" asp-area="" asp-controller="Recipees" asp-action="Index">European</a>
+        </li>
+        <li class="Cuisine-Option-navlist-item">
+            <a class="Mediterranean" asp-area="" asp-controller="Recipees" asp-action="Index">Mediterranean</a>
+        </li>       
+    </ul>
+</div>
+
+<section class="main">
+    <div class="container">
+        <div class="row">
+            <table class="table-borderless">
+                <tr>
+                    <td>
+                        <h2 style="margin-left:10%">Meals</h2>
+                        <p>
+                            <h4 style="margin-left:10%">
+                                Find recipes for delicious Appetizers, Main dishes, and Desserts.
+                            </h4>
+                        </p>
+                    </td>
+                    <td>
+                        <img src="/images/European.jpg" style=" border-radius:4px 4px;" height="300" width="500" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="row" style="margin-top:10px;border-top:1px dotted skyblue">
+            <table class="table table-borderless">
+                <tr>
+                    <td>
+                        <img style="padding-top: 2em" src="~/images/cranberry drink.jpg" style=" border-radius:4px 4px;" height="400" width="550" />
+                    </td>
+                    <td>&nbsp;<br /></td>
+                    <td>&nbsp;<br /></td>
+                    <td>&nbsp;<br /></td>
+                    <td>
+                        <h2 style="padding-top: 2em">Drinks</h2>
+                        <p>
+                            <h4>
+                                Here, you will find great cocktail recipes, for alcoholic drinks and non-alcoholic drinks <br>
+                                you should know how to make. Choose the best for the occasion. Cheers!
+                            </h4>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+        </main>
+    </div>
